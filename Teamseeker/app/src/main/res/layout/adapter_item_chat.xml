@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    tools:context=".fragments.EventParticipantsFragment">
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:text="TextView"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_username"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+
+        android:text="TextView"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView_hostIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_toEndOf="@+id/textView_username"
+        android:background="@drawable/ic_star_border_black" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/textView_time"
+        android:text="TextView"
+        android:textColor="@color/secondaryTextColor"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/secondaryTextColor"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/baselayout_drawer">
+
+    <item
+        android:id="@+id/menuitem_createevent"
+        android:icon="@drawable/ic_add_marker"
+        android:title="@string/create_event" />
+    <item
+        android:id="@+id/menuitem_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/menuitem_myevents"
+        android:icon="@drawable/ic_format_list"
+        android:title="@string/my_events" />
+</menu>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_usernameTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="357dp"
+        app:layout_constraintGuide_percent=".28" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_usernameBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="357dp"
+        app:layout_constraintGuide_percent=".35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_tophalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="357dp"
+        app:layout_constraintGuide_percent=".33" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_profileData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient_toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_tophalf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView_navStatusBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_usernameBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_usernameTop"
+        app:srcCompat="@drawable/drawable_roundbox" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="imageView_profilePicBorder"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_usernameTop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_profilePic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onProfileImageClick"
+        app:layout_constraintBottom_toBottomOf="@+id/group_picture"
+        app:layout_constraintEnd_toEndOf="@+id/group_picture"
+        app:layout_constraintStart_toStartOf="@+id/group_picture"
+        app:layout_constraintTop_toTopOf="@+id/group_picture" />
+
+    <ImageView
+        android:id="@+id/imageView_profilePicBorder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/group_picture"
+        app:layout_constraintEnd_toEndOf="@+id/group_picture"
+        app:layout_constraintStart_toStartOf="@+id/group_picture"
+        app:layout_constraintTop_toTopOf="@+id/group_picture"
+        app:srcCompat="@drawable/drawable_pictureframeround" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:constraint_referenced_ids="lastName,dateOfBirth,editText_date,spinner_gender,editText_firstName,editText_lastName,firstName,gender,guideline_inforight,guideline_infoleft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_inforight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_infoleft"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_navStatusBackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/username_required"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_navStatusBackground"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_navStatusBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView_navStatusBackground"
+        app:layout_constraintTop_toTopOf="@+id/imageView_navStatusBackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        app:layout_constraintStart_toStartOf="@+id/editText_firstName"
+        app:layout_constraintTop_toTopOf="@+id/group_info" />
+
+    <EditText
+        android:id="@+id/editText_firstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/optional"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/group_info"
+        app:layout_constraintStart_toStartOf="@+id/group_info"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/last_name"
+        app:layout_constraintStart_toStartOf="@+id/editText_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/editText_firstName" />
+
+    <EditText
+        android:id="@+id/editText_lastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/optional"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/group_info"
+        app:layout_constraintStart_toStartOf="@+id/group_info"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="@+id/editText_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/editText_lastName" />
+
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText_lastName"
+        app:layout_constraintStart_toStartOf="@+id/editText_lastName"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <TextView
+        android:id="@+id/dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_of_birth"
+        app:layout_constraintStart_toStartOf="@+id/spinner_gender"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_gender" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/group_info"
+        app:layout_constraintStart_toStartOf="@+id/group_info"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_infoleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent=".2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_inforight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent=".8" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/required"
+        app:layout_constraintBottom_toBottomOf="@+id/group_info"
+        app:layout_constraintStart_toStartOf="@+id/guideline_infoleft" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onSelectionConfirmed"
+        android:tint="@color/primaryLightColor"
+        android:visibility="gone"
+        app:backgroundTint="@color/primaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="@+id/group_info"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_inforight"
+        app:srcCompat="@drawable/ic_save" />
+
+</android.support.constraint.ConstraintLayout>

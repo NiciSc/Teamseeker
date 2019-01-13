@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="username_length_max">14</integer>
+    <integer name="chat_message_length_max">200</integer>
+    <integer name="default_zoom">15</integer>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "61330730631",
+    "firebase_url": "https://teamseeker-fff0d.firebaseio.com",
+    "project_id": "teamseeker-fff0d",
+    "storage_bucket": "teamseeker-fff0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61330730631:android:f48ca49fe7909af2",
+        "android_client_info": {
+          "package_name": "de.ur.mi.android.teamseeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61330730631-56pcam33v7dkipku2j15r59csh1nvr89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.ur.mi.android.teamseeker",
+            "certificate_hash": "188bf30601e6b67f6d5fe747d8568c10a91ccdb3"
+          }
+        },
+        {
+          "client_id": "61330730631-2t2mak32fse4u12k0plpnotckv8kubac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaMe7vFM42tlxdTk_PWRhyyBYwJa8Bqpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61330730631-2t2mak32fse4u12k0plpnotckv8kubac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

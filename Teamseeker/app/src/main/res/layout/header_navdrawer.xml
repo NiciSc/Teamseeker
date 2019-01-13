@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_drawerHeader"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navdrawer_header_height"
+    android:background="@drawable/gradient_navheader"
+    android:clickable="true"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/textView_gotoprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="right"
+        android:text="@string/go_to_profile"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:tint="@color/secondaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_gotoprofile"
+        app:srcCompat="@drawable/ic_open_in_new" />
+
+    <ImageView
+        android:id="@+id/imageView_profilePic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_headerUserName"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_arrow"
+        app:layout_constraintStart_toStartOf="@+id/textView_gotoprofile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_face" />
+
+    <TextView
+        android:id="@+id/textView_headerUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/username"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_gotoprofile"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_profilePic"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_profilePic"
+        app:layout_constraintStart_toStartOf="@+id/imageView_profilePic"
+        app:layout_constraintTop_toTopOf="@+id/imageView_profilePic"
+        app:srcCompat="@drawable/drawable_pictureframecircle" />
+
+</android.support.constraint.ConstraintLayout>

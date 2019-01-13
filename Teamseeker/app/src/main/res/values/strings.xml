@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Teamseeker</string>
+    <string name="connectivity_error">Connection lost!\nChanges will be saved and uploaded when a connection is found!</string>
+    <string name="app_started">app:initialize</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="map">Map</string>
+    <string name="title_activity_map">Map</string>
+    <string name="date_format_string">dd.mm.yyyy</string>
+    <string name="birthDate_key">birthDate_key</string>
+    <string name="username_key">username_key</string>
+    <string name="gender_key">gender_key</string>
+    <string name="placeholder">oof.</string>
+    <string name="event_intent_key">event_key</string>
+    <string name="intent_key_firstsetup">setup:first</string>
+    <string name="user_intent_key">user_key</string>
+    <string name="return_intent_key">return_key</string>
+    <string name="event_creating">Creating Event</string>
+    <string name="event_edit">Edit Event</string>
+    <string name="event_editing">Editing Event</string>
+    <string name="event_join">Join</string>
+    <string name="event_leave">Leave</string>
+    <string name="event_save">Save</string>
+    <string name="data_save_success">Data has been saved!</string>
+    <string name="data_save_fail_connection">Data could not be saved! Connection cannot be established!</string>
+    <string name="data_save_fail_fileexists">Data could not be saved! The file already exists!</string>
+    <string name="data_get_fail_connection">Data could not be retrieved! Connection cannot be established!</string>
+    <string name="data_get_fail_filenotfound">Data could not be retrieved! The file does not exist!</string>
+    <string name="data_get_success">Data retrieved!</string>
+    <string name="error_namesize">Username too long!</string>
+    <string name="error_notpopulated">Please fill in the required fields to continue.</string>
+    <string name="warning_nochange">Birth date and gender can not be edited later! Are you sure you want to save your profile?</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="error_username_taken">Username already taken.</string>
+    <string name="toast_profile_saved">Profile saved!</string>
+    <string name="toast_profilepicture_uploaded">Your profile picture has been uploaded!</string>
+    <string name="error_notpopulated_name_password">Username or password empty!</string>
+    <string name="error_authentication">Authentication failed.</string>
+    <string name="success_registration">Registration successful!</string>
+    <string name="toast_pressagaintoexit">Press again to exit</string>
+    <string name="warning_locationunchanged">You didn\'t set a new location! Are you sure you want to create this event at your location?</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="error_eventnotpopulated">Please fill out every field before you create the event</string>
+    <string name="warning_lastparticipant">You are the last participant!  If you leave the event will be deleted.</string>
+    <string name="cancel">CANCEL</string>
+    <string name="warning_newhost">You are currently hosting this event! If you leave a new host will be selected.</string>
+    <string name="leave_event">Leave Event</string>
+    <string name="warning_second_newhost">Are you sure you want to leave? You will lose the host status and control over your event!  If no valid hosts are found the event will be deleted!</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="error_eventfull">This event is already full!</string>
+    <string name="error_profilecorrupted">Fatal Error: Your profile data is corrupted, please set your profile data again!</string>
+    <string name="error_noaccess">Join the event to gain access to this!</string>
+    <string name="kicked_event">You were kicked from</string>
+    <string name="unread_messages">There are unread messages in this event!</string>
+    <string name="joined_event">You joined the event!</string>
+    <string name="left_event">You left the event!</string>
+    <string name="intent_chatservice_events">chatservice_intent</string>
+    <string name="error_agenomatch">Sorry! Your age does not match the minimum participant age.</string>
+    <string name="prefs_chatservice_helper">chat_service_helper</string>
+    <string name="notification_channel_id">teamseeker_chat</string>
+    <string name="notification_messagefrom">Message from</string>
+    <string name="notification_channeldesc">Chat notifications for Teamseeker</string>
+    <string name="error_chatmessagesize_1">Messages must be less than</string>
+    <string name="error_chatmessagesize_2">characters!</string>
+    <string name="error_usernamenotfound">Username not found</string>
+    <string name="note_messagesent">Message sent.</string>
+    <string name="spinner_alltypes">All Types</string>
+    <string name="kick_1">Kick</string>
+    <string name="kick_2">from the event?</string>
+    <string name="kick">Kick</string>
+    <string name="error_alreadyhost">You are already hosting an event!</string>
+    <string name="error_myeventsempty">You\'re not participting in any events.</string>
+    <string name="prefs_myevents">myEvents</string>
+    <string name="go_to_profile">Go to Profile</string>
+    <string name="be_yourself">BE YOURSELF</string>
+    <string name="tutorial_profile_string">Create your profile to become an active part of Teamseeker!</string>
+    <string name="find_events">FIND EVENTS</string>
+    <string name="tutorial_map_search_string">Watch out for interesting events!</string>
+    <string name="be_precise">BE PRECISE</string>
+    <string name="tutorial_filter_string">Look for specific events!</string>
+    <string name="tap_anywhere_to_start">Tap anywhere to start!</string>
+    <string name="make_new_friends">MAKE NEW FRIENDS</string>
+    <string name="tutorial_event_join_string">Get to know new people in exciting events!</string>
+    <string name="username">Username</string>
+    <string name="age">Age</string>
+    <string name="host">Host</string>
+    <string name="search_participant">Search Participant</string>
+    <string name="search_filter_menu">Search Filter Menu</string>
+    <string name="search">SEARCH</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="max_distance">Max. Distance</string>
+    <string name="time">Time</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="minimum_age">Minimum Age</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="max_participants">Max. Participants</string>
+    <string name="send">SEND</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="username_required">Username*</string>
+    <string name="first_name">First Name</string>
+    <string name="optional">Optional</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender*</string>
+    <string name="date_of_birth">Date of Birth*</string>
+    <string name="required">*Required</string>
+    <string name="admin">Admin</string>
+    <string name="clear_shared_preferences">Clear Shared Preferences</string>
+    <string name="login">Login</string>
+    <string name="chat">Chat</string>
+    <string name="info">Info</string>
+    <string name="party">Party</string>
+    <string name="filter">Filter</string>
+    <string name="logout">Logout</string>
+    <string name="create_event">Create Event</string>
+    <string name="my_events">My Events</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="eventType">
+        <item>Board Games</item>
+        <item>Movies</item>
+        <item>Sports</item>
+        <item>Cooking</item>
+        <item>Chill</item>
+        <item>Party</item>
+    </string-array>
+    <string-array name="distances">
+        <item>No limit</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+</resources>
